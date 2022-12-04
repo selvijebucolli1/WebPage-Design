@@ -1,0 +1,43 @@
+.hero{
+ text-align: center;
+
+  .wrapper{
+  margin-top: 200px;
+  .item{
+    height: $containerWidth;
+    padding: 0 12%;
+  }
+      h1{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 98px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+      }
+     }
+      span{ 
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0.3em;
+      color: #FFFFFF;
+      
+      }
+      .hero-arrow{
+        background-color:black;
+        position: relative;
+        display: flex;
+        align-items: center;
+      }
+
+.owl-carousel-vertical{
+  transform: rotate3d(0, 0, 1, 90deg);
+}
+.owl-carousel-vertical .item{
+  transform: rotate3d(0, 0, 1, -90deg);
+}
+}

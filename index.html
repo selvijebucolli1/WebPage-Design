@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
-
-    <title>Document</title>
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="./vendor/assets/owl.carousel.css">
+    <link rel="stylesheet" href="./vendor/assets/owl.theme.default.css">
+    <title>WebPage</title>
+   
 </head>
 <body>
     <div class="background">
@@ -36,15 +38,138 @@
     <section class="hero">
         <div class="container">
 
-            
+            <div class="wrapper">
+                <div class="owl-carousel owl-carousel-vertical">
+                    <div class="item">
+                        <h1>SIMPLE & MODERN</h1>
+                        
+                        <span>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                    </div>
+                    <div class="item">
+                        <h1>SIMPLE & MODERN2</h1>
+                        
+                        <span>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                    </div>
+                    <div class="item">
+                        <h1>SIMPLE & MODERN3</h1>
+                        
+                        <span>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                    </div>
+                    <div class="item">
+                        <h1>SIMPLE & MODERN4</h1>
+                        
+                        <span>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                    </div>
+                    <div class="item">
+                        <h1>SIMPLE & MODERN5</h1>
+                        
+                        <span>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
+                    </div>
+                </div>
+              </div>           
         </div>
     </section>
-
-
-
-
-
 </div>
+
+
+
+
+
+
+<section class="articles">
+        <div class="title">
+            <span class="title_line"></span>
+            <span class="title_text">WHAT WE DO</span>
+        </div>
+        <div class="articles_position">
+          <div class="container">
+            <div class="articles__wrapper">
+                <div class="article1_image">
+                    <img src="/assets/article1.png" alt="">
+                </div>
+                <article class="article article1">
+                    <h5 class="articles__headline">ONE WORLD</h6>
+                    <h2 class="articles__title">TRADE CENTER</h2>
+                    <p class="articles__info">Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful. </p>  
+                    <a href="#" class="btn">MORE DETAILS</a>
+                    <h6 class="articles_location">New York City, United States - 1776 feet</h6>
+                </article>
+            </div>
+          </div>
+
+        <div class="articles_position ap2">
+          <div class="articles__wrapper2">
+            <article class="article article2">
+                <h5 class="articles__headline">INTERNATIONAL</h6>
+                <h2 class="articles__title">COMMERCE CENTRE</h2>
+                <p class="articles__info">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>  
+                <a href="#" class="btn">MORE DETAILS</a>
+                <h6 class="articles_location">Hong Kong - 1588 feet</h6>
+                </article>
+             <div class="article2_image">
+                    <img src="/assets/article2.png" alt="">
+             </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- skriptat -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./vendor/owl.carousel.js"></script>
+
+<script>
+    
+    $(function(){
+  $('.owl-carousel').owlCarousel({
+    items: 1,
+    loop: false,
+    nav: false,
+    margin: 0
+  });
+  // this code below enables drag and drop vertically. Unfortunately I was unable to disable horizontal drag and drop so it will remain active, but we already have something now = D
+  $('.owl-carousel').data('owl.carousel').difference = function(first, second) {
+	return {
+		x: first.x - second.x + (first.y - second.y),
+		y: first.y - second.y
+	};
+};
+});
+
+</script>
+
 
 
 </body>
