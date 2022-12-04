@@ -82,7 +82,7 @@
             <span class="title_text">WHAT WE DO</span>
         </div>
         <div class="articles_position">
-          <div class="container">
+              <div class="container">
             <div class="articles__wrapper">
                 <div class="article1_image">
                     <img src="/assets/article1.png" alt="">
@@ -96,7 +96,6 @@
                 </article>
             </div>
           </div>
-
         <div class="articles_position ap2">
           <div class="articles__wrapper2">
             <article class="article article2">
@@ -112,10 +111,42 @@
         </div>
       </div>
     </div>
-  </div>
+ 
 </section>
 
 
+<section class="news">
+    <div class="container">
+        <div class="title">
+            <span class="title_line"></span>
+            <span class="title_text">LATEST NEWS</span>
+        </div>
+    </div>
+</section>
+
+
+<section class="gallery" id="section3">
+    <div class="container">
+        <div class="title">
+            <span class="title_line"></span>
+            <span class="title_text">GALLERY</span>
+        </div>
+    <div class="gallery__grid">
+        <div class="gallery__grid-left">
+            <img src="./assets/gallery1.png" alt="">
+        </div>
+        <div class="gallery__grid-right">
+            <img src="./assets/gallery2.png" alt="">
+            <img src="./assets/gallery3.png" alt="">
+            <img src="./assets/gallery4.png" alt="">
+            <img src="./assets/gallery5.png" alt="">
+        </div>
+    </div>
+    <div class="gallery__btn">
+    <a href="#" class="btn">SEE MORE</a>
+</div>
+</div>
+</section>
 
 
 
@@ -167,6 +198,29 @@
 	};
 };
 });
+
+
+
+$(function(){
+    $('.owl-carousel2').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+});
+
+
 
 </script>
 

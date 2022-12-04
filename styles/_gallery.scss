@@ -1,0 +1,37 @@
+.gallery {
+    & {
+        padding-top:100px;
+        margin:0 13% 139px 13%;
+    }
+    img{
+        width: 100%;
+     
+    }
+
+    &__grid-left{
+        display: grid;
+        justify-items: end;
+    }
+    &__grid {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: 1fr 1fr;
+        padding-bottom: 60px;
+    }
+    &__grid-right {
+        display: grid;
+        justify-items: stretch;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+    }
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .btn{
+        @include btn;
+       
+    }
+  
+}

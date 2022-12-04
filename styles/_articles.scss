@@ -5,26 +5,37 @@
     justify-content: center;
 
     .title_line{ 
-        position: absolute;
-        width: 100px;
-        
         @include title_line
     }
     .title_text{
-        margin-top: 30px;
-        margin-bottom: 87px;
         @include title;
-      
-        
     }
-
 }
 
 .articles{
-    position: absolute;
     z-index: 2;
     img{
         width: 100%;
+    }
+    &__headline{
+        @include headline
+    }
+
+    &__title{   
+        @include title;
+        margin-bottom: 19px;
+
+    }
+    &__info{
+        @include text;
+        margin-bottom: 41px;
+    }
+    &_location{
+        @include location-text;
+        margin-top: 60px;
+    }
+    .btn{
+        @include btn
     }
 }
 .articles_position{
@@ -65,25 +76,3 @@
   .article2 { grid-area: col1; }
 
 
-//articles-design
-
-.articles__headline{
-	@include headline
-}
-
-.articles__title{   
-    @include title;
-    margin-bottom: 19px;
-
-}
-.articles__info{
-    @include text;
-    margin-bottom: 41px;
-}
-.articles_location{
-    @include location-text;
-    margin-top: 60px;
-}
-.btn{
-    @include btn
-}

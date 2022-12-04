@@ -146,9 +146,9 @@ table {
   justify-content: center;
 }
 .title .title_line {
+  border-top: 1px solid #2C4058;
   position: absolute;
   width: 100px;
-  border-top: 1px solid #2C4058;
 }
 .title .title_text {
   margin-top: 30px;
@@ -162,11 +162,58 @@ table {
 }
 
 .articles {
-  position: absolute;
   z-index: 2;
 }
 .articles img {
   width: 100%;
+}
+.articles__headline {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  color: #2C4058;
+}
+.articles__title {
+  margin-top: 30px;
+  margin-bottom: 87px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 54px;
+  color: #2C4058;
+  margin-bottom: 19px;
+}
+.articles__info {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #2C4058;
+  margin-bottom: 41px;
+}
+.articles_location {
+  font-family: "Open Sans";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  margin-top: 60px;
+}
+.articles .btn {
+  padding: 16px 41px;
+  border: 1px solid #2C4058;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .articles_position {
@@ -215,46 +262,39 @@ table {
   grid-area: col1;
 }
 
-.articles__headline {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 27px;
-  color: #2C4058;
+.news {
+  background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
 }
 
-.articles__title {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 44px;
-  line-height: 54px;
-  color: #2C4058;
-  margin-bottom: 19px;
+.gallery {
+  padding-top: 100px;
+  margin: 0 13% 139px 13%;
 }
-
-.articles__info {
-  font-family: "Open Sans";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 30px;
-  color: #2C4058;
-  margin-bottom: 41px;
+.gallery img {
+  width: 100%;
 }
-
-.articles_location {
-  font-family: "Open Sans";
-  font-style: italic;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
-  color: #000000;
-  margin-top: 60px;
+.gallery__grid-left {
+  display: grid;
+  justify-items: end;
 }
-
-.btn {
+.gallery__grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  padding-bottom: 60px;
+}
+.gallery__grid-right {
+  display: grid;
+  justify-items: stretch;
+  grid-template-columns: 1fr 1fr;
+  gap: 9px;
+}
+.gallery__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery .btn {
   padding: 16px 41px;
   border: 1px solid #2C4058;
   font-family: "Montserrat";

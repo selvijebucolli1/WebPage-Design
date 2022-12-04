@@ -2,8 +2,6 @@
   background:linear-gradient(243.43deg, #6442ddd1 16.9%, #49a3e3 83.27%), url(/assets/hero.jpg);
   background-size: cover;
 	background-repeat: no-repeat;
-  
- 
   height: 800px;
 }
 
@@ -40,10 +38,6 @@
 }
   }
   }
-
-
-  
-
-.container {
-  @include container;
-}
+  .container {
+    @include container;
+  }
