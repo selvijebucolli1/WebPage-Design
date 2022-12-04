@@ -91,3 +91,6 @@
   .article2 { grid-area: col1; }
 
 
+.btn:hover{
+ @include btn--hover
+}

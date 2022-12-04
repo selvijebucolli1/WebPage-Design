@@ -76,7 +76,19 @@ color: $accent;
             color: #000000;
             text-decoration: none;
         }
-
+        @mixin btn--hover {
+            
+            padding: 16px 41px;
+            border: 1px solid #ffffff;
+            font-family: 'Montserrat';
+            font-style: normal;
+            background-color: #000000;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+            color: #ffffff;
+            text-decoration: none;
+        }
 
 
         @mixin container {

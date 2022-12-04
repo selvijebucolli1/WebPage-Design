@@ -94,5 +94,10 @@
         padding: 11px 34px;
         margin-left: 177px;
     }
+    .btn:hover{
+        @include btn--hover;
+        padding: 11px 34px;
+        margin-left: 177px;
+       }
 
 }

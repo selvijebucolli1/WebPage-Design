@@ -36,5 +36,8 @@
         @include btn;
        
     }
+    .btn:hover{
+        @include btn--hover
+       }
   
 }
