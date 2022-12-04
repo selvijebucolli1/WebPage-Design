@@ -34,9 +34,20 @@
         @include text;
         margin-bottom: 41px;
     }
-    &_location{
+    &__location{
         @include location-text;
         margin-top: 60px;
+        display: flex;
+        align-items: center;
+    }
+    &__location::before{
+        content: "";
+        width: 20px;
+        height:17px;
+        background: url(../assets/location_on_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
+        background-size: 90%;
+        display: inline-block;
+        margin-right: 13px;
     }
     .btn{
         @include btn

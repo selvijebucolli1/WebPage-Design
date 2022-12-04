@@ -2,6 +2,9 @@
     &{
      position: relative;
     }
+    img{
+        width: 100%;
+    }
     .title{
         margin-top: 60px;
         margin-bottom: 30px;
@@ -17,6 +20,7 @@
         background: url(../assets/location_on_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
         background-size: 90%;
         display: inline-block;
+        margin-right: 6px;
     }
     &__list2::before{
         content: "";
@@ -25,6 +29,7 @@
         background: url(../assets/call_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
         background-size: 90%;
         display: inline-block;
+        margin-right: 6px;
     }
     &__list3::before{
         content: "";
@@ -33,6 +38,7 @@
         background: url(../assets/inbox_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
         background-size: 90%;
         display: inline-block;
+        margin-right: 6px;
     }
     &__list4::before{
         content: "";
@@ -41,6 +47,7 @@
         background: url(../assets/scheduleIcon.png) no-repeat center;
         background-size: 90%;
         display: inline-block;
+        margin-right: 6px;
     }
 
 

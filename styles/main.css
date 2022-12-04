@@ -196,7 +196,7 @@ table {
   color: #2C4058;
   margin-bottom: 41px;
 }
-.articles_location {
+.articles__location {
   font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
@@ -204,6 +204,17 @@ table {
   line-height: 20px;
   color: #000000;
   margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.articles__location::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  background: url(../assets/location_on_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
+  background-size: 90%;
+  display: inline-block;
+  margin-right: 13px;
 }
 .articles .btn {
   padding: 16px 41px;
@@ -313,6 +324,9 @@ table {
 .contact {
   position: relative;
 }
+.contact img {
+  width: 100%;
+}
 .contact .title {
   margin-top: 60px;
   margin-bottom: 30px;
@@ -328,6 +342,7 @@ table {
   background: url(../assets/location_on_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
   background-size: 90%;
   display: inline-block;
+  margin-right: 6px;
 }
 .contact__list2::before {
   content: "";
@@ -336,6 +351,7 @@ table {
   background: url(../assets/call_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
   background-size: 90%;
   display: inline-block;
+  margin-right: 6px;
 }
 .contact__list3::before {
   content: "";
@@ -344,6 +360,7 @@ table {
   background: url(../assets/inbox_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
   background-size: 90%;
   display: inline-block;
+  margin-right: 6px;
 }
 .contact__list4::before {
   content: "";
@@ -352,6 +369,7 @@ table {
   background: url(../assets/scheduleIcon.png) no-repeat center;
   background-size: 90%;
   display: inline-block;
+  margin-right: 6px;
 }
 .contact__form {
   position: absolute;
