@@ -1,5 +1,5 @@
 .background{
-  background:linear-gradient(243.43deg, #6442ddd1 16.9%, #49a3e3 83.27%), url(/assets/hero.jpg);
+  background:linear-gradient(243.43deg, #6442ddd1 16.9%, #49a3e3 83.27%), url(../assets/hero.jpg);
   background-size: cover;
 	background-repeat: no-repeat;
   height: 800px;
@@ -34,10 +34,10 @@
         line-height: 18px;
         text-decoration: none;
         color: #FFFFFF;
+      }
+    }
   }
 }
-  }
-  }
   .container {
     @include container;
   }

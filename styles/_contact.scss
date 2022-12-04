@@ -1,0 +1,91 @@
+.contact {
+    &{
+     position: relative;
+    }
+    .title{
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+    &__list{
+    display: flex;
+    align-items: center;
+    }
+    &__list1::before{
+        content: "";
+        width: 20px;
+        height:17px;
+        background: url(../assets/location_on_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
+        background-size: 90%;
+        display: inline-block;
+    }
+    &__list2::before{
+        content: "";
+        width: 20px;
+        height:17px;
+        background: url(../assets/call_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
+        background-size: 90%;
+        display: inline-block;
+    }
+    &__list3::before{
+        content: "";
+        width: 20px;
+        height:17px;
+        background: url(../assets/inbox_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
+        background-size: 90%;
+        display: inline-block;
+    }
+    &__list4::before{
+        content: "";
+        width: 20px;
+        height:17px;
+        background: url(../assets/scheduleIcon.png) no-repeat center;
+        background-size: 90%;
+        display: inline-block;
+    }
+
+
+    &__form {
+        position: absolute;
+        z-index: 1;
+        background-color: white;
+        padding: 0px 60px 69px 60px;
+        top: 65%;
+        left: 26%;
+    }
+    &__form-info {
+        display: flex;   
+    }
+    &__form-list{
+        margin-right: 54px;
+        font-family: 'FontAwesome';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height:56px;  
+    }
+    &__form-input {
+        padding-top: 15px;
+        display: flex;
+        flex-direction: column; 
+    }
+    & input {
+        margin-bottom: 33px;
+        padding-bottom: 14px;
+        padding-right: 80px;
+        border:none;
+        border-bottom: 1px solid #4B5562;
+        color: #4B5562;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+    }
+    
+    .btn {
+        @include btn;
+        padding: 11px 34px;
+        margin-left: 177px;
+    }
+
+}

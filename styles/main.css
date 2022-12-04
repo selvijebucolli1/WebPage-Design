@@ -60,7 +60,7 @@ table {
 }
 
 .background {
-  background: linear-gradient(243.43deg, rgba(100, 66, 221, 0.8196078431) 16.9%, #49a3e3 83.27%), url(/assets/hero.jpg);
+  background: linear-gradient(243.43deg, rgba(100, 66, 221, 0.8196078431) 16.9%, #49a3e3 83.27%), url(../assets/hero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 800px;
@@ -141,7 +141,6 @@ table {
 }
 
 .title {
-  margin-top: 102px;
   display: flex;
   justify-content: center;
 }
@@ -152,7 +151,6 @@ table {
 }
 .title .title_text {
   margin-top: 30px;
-  margin-bottom: 87px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -163,6 +161,10 @@ table {
 
 .articles {
   z-index: 2;
+}
+.articles .title {
+  margin-top: 102px;
+  margin-bottom: 87px;
 }
 .articles img {
   width: 100%;
@@ -177,7 +179,6 @@ table {
 }
 .articles__title {
   margin-top: 30px;
-  margin-bottom: 87px;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -270,6 +271,9 @@ table {
   padding-top: 100px;
   margin: 0 13% 139px 13%;
 }
+.gallery .title {
+  margin-bottom: 87px;
+}
 .gallery img {
   width: 100%;
 }
@@ -306,18 +310,111 @@ table {
   text-decoration: none;
 }
 
+.contact {
+  position: relative;
+}
+.contact .title {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.contact__list {
+  display: flex;
+  align-items: center;
+}
+.contact__list1::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  background: url(../assets/location_on_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
+  background-size: 90%;
+  display: inline-block;
+}
+.contact__list2::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  background: url(../assets/call_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
+  background-size: 90%;
+  display: inline-block;
+}
+.contact__list3::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  background: url(../assets/inbox_FILL1_wght400_GRAD0_opsz48.png) no-repeat center;
+  background-size: 90%;
+  display: inline-block;
+}
+.contact__list4::before {
+  content: "";
+  width: 20px;
+  height: 17px;
+  background: url(../assets/scheduleIcon.png) no-repeat center;
+  background-size: 90%;
+  display: inline-block;
+}
+.contact__form {
+  position: absolute;
+  z-index: 1;
+  background-color: white;
+  padding: 0px 60px 69px 60px;
+  top: 65%;
+  left: 26%;
+}
+.contact__form-info {
+  display: flex;
+}
+.contact__form-list {
+  margin-right: 54px;
+  font-family: "FontAwesome";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 56px;
+}
+.contact__form-input {
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.contact input {
+  margin-bottom: 33px;
+  padding-bottom: 14px;
+  padding-right: 80px;
+  border: none;
+  border-bottom: 1px solid #4B5562;
+  color: #4B5562;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+.contact .btn {
+  padding: 16px 41px;
+  border: 1px solid #2C4058;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  text-decoration: none;
+  padding: 11px 34px;
+  margin-left: 177px;
+}
+
 .footer {
   background: linear-gradient(243.43deg, rgba(17, 4, 63, 0.3333333333) 16.9%, rgba(33, 97, 143, 0.6941176471) 83.27%), url("../assets/footer.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 .footer__wrapper {
-  padding-top: 204px;
-  padding-bottom: 291px;
+  padding: 254px 0 291px 47px;
 }
 .footer__cpr {
   padding-top: 41px;
-  padding-left: 19%;
+  padding-left: 20%;
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;

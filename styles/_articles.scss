@@ -1,6 +1,5 @@
 
 .title{
-    margin-top: 102px;
     display: flex;
     justify-content: center;
 
@@ -14,6 +13,11 @@
 
 .articles{
     z-index: 2;
+
+    .title{
+        margin-top: 102px;
+        margin-bottom: 87px;
+    }
     img{
         width: 100%;
     }
