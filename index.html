@@ -39,7 +39,7 @@
         <div class="container">
 
             <div class="wrapper">
-                <div class="owl-carousel owl-carousel-vertical">
+                <div class="owl1 owl-carousel owl-carousel-vertical">
                     <div class="item">
                         <h1>SIMPLE & MODERN</h1>
                         <span>WE MAKE THE WORLD BEAUTIFUL EVERYDAY</span>
@@ -112,9 +112,24 @@
 
 <section class="news" id="latestNews">
     <div class="container">
-        <div class="title">
-            <span class="title_line"></span>
-            <span class="title_text">LATEST NEWS</span>
+        <div class="title--white">
+            <span class="title_line--white"></span>
+            <span class="title_text--white">LATEST NEWS</span>
+        </div>
+
+        <div class="owl2 owl-carousel owl-theme">
+            <div class="item"><h4>1</h4></div>
+            <div class="item"><h4>2</h4></div>
+            <div class="item"><h4>3</h4></div>
+            <div class="item"><h4>4</h4></div>
+            <div class="item"><h4>5</h4></div>
+            <div class="item"><h4>6</h4></div>
+            <div class="item"><h4>7</h4></div>
+            <div class="item"><h4>8</h4></div>
+            <div class="item"><h4>9</h4></div>
+            <div class="item"><h4>10</h4></div>
+            <div class="item"><h4>11</h4></div>
+            <div class="item"><h4>12</h4></div>
         </div>
     </div>
 </section>
@@ -221,7 +236,7 @@
 <script>
     
     $(function(){
-  $('.owl-carousel').owlCarousel({
+  $('.owl1').owlCarousel({
     items: 1,
     loop: false,
     nav: false,
@@ -234,28 +249,30 @@
 		y: first.y - second.y
 	};
 };
-});
 
-
-
-$(function(){
-    $('.owl-carousel2').owlCarousel({
+$('.owl2').owlCarousel({
     loop:true,
     margin:10,
-    nav:true,
+    responsiveClass:true,
     responsive:{
         0:{
-            items:1
+            items:1,
+            nav:true
         },
         600:{
-            items:3
+            items:3,
+            nav:false
         },
         1000:{
-            items:5
+            items:5,
+            nav:true,
+            loop:false
         }
     }
 })
 });
+
+
 
 
 

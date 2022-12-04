@@ -1,3 +1,19 @@
 .news{
     background: linear-gradient(237.1deg, #24CCFA 11.16%, #3C7FD4 89.18%);
+
+    .title--white{
+        display: flex;
+        justify-content: center;
+        margin-top: 102px;
+        margin-bottom: 87px;
+        .title_line--white{ 
+            @include title_line--white
+        }
+        .title_text--white{
+            @include title--white
+        }
+    }
+    
+
 }
+
