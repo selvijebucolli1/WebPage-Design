@@ -579,7 +579,6 @@ table {
     margin: 0 auto;
   }
   .main-nav {
-    background-color: rgb(240, 57, 194);
     background-size: cover;
     display: flex;
     align-content: flex-end;
