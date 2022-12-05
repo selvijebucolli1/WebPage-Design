@@ -231,9 +231,9 @@
             </ul>
            </div>
             <div class="contact__form-input">
-                <div><input type="text" placeholder="Name"></div>
-                <div><input type="email" placeholder="Email"></div>
-                <a href="#" class="btn">Submit</a>
+                <div><input type="text" placeholder="Name" id="name"></div>
+                <div><input type="email" placeholder="Email" id="email"></div>
+                <a href="#" class="btn contact__button">Submit</a>
             </div>
         </div>
     </div>
@@ -261,6 +261,7 @@
 <!-- skriptat -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="./vendor/owl.carousel.js"></script>
+<script src="main.js"></script>
 
 <script>
     
@@ -271,8 +272,7 @@
     nav: false,
     margin: 0
   });
-  // this code below enables drag and drop vertically. Unfortunately I was unable to disable horizontal drag and drop so it will remain active, but we already have something now = D
-  $('.owl-carousel').data('owl.carousel').difference = function(first, second) {
+ $('.owl-carousel').data('owl.carousel').difference = function(first, second) {
 	return {
 		x: first.x - second.x + (first.y - second.y),
 		y: first.y - second.y
@@ -303,14 +303,6 @@ $('.owl2').owlCarousel({
     }
 })
     });
-
-
-
-
-
 </script>
-
-
-
 </body>
 </html>
