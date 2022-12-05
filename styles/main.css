@@ -90,7 +90,7 @@ table {
   font-size: 14px;
   line-height: 18px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .container {
@@ -648,7 +648,7 @@ a {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: rgba(109, 174, 228, 0.9450980392);
+    background-color: rgba(20, 118, 198, 0.9450980392);
     width: 100%;
     text-align: center;
     transition: 0.3s;
