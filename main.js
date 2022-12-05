@@ -8,3 +8,14 @@ $('.contact__button').click(function(e){
         alert("Form submitted succesfully!");
     }
 })
+
+
+const hamburger =document.querySelector(".hamburger");
+const navMenu =document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+})
+
+
