@@ -32,14 +32,189 @@
     }
 }
 
+@media(max-width: 767px){
+    .container{
+        max-width:767px;
+        width: 100%;
+        margin: 0 auto;
+       }
+       .main-nav{
+        padding-top: 20px;
+       }
+       .nav-socials{
+        display: none;
+       }
+       .main-nav ul {
+       display: none;
+    }
+    .hamburger{
+        display: flex;
+        padding-right: 10%;
+      }
+      .background{
+        background:linear-gradient(243.43deg, #6442ddd1 16.9%, #49a3e3 83.27%), url(../assets/hero.jpg);
+        background-size: cover;
+          background-repeat: no-repeat;
+        height: 600px;
+      }
+      /*hero*/
+
+      .hero .wrapper{
+        padding-top: 20px;
+      }
+      .hero .wrapper .item {
+        height: 350px;
+        padding: 0 20px;
+    }
+    .hero .wrapper h1 {
+        padding-top: 100px;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 90px;
+    }
+    .hero span {
+        font-size: 14px;
+    }
+    /*articles*/
+    .articles__wrapper {
+        margin-bottom: 100px;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .articles__title {
+        margin-top: 0px;
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+    .articles__headline {
+        padding-top: 20px;
+        font-size: 18px;
+        
+    }
+    .articles__info {
+        font-size: 16px;
+    }
+    .articles__wrapper2 {
+        margin-bottom: 100px;
+        width: 115%;
+        padding: 0 5%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+    .ap2{
+        margin-left: 0%;
+    }
+     /*news */
+     .news .title--white .title_text--white {
+    margin-top: 10px;
+    font-size: 25px;
+    }
+    .news .title--white {
+        display: flex;
+        justify-content: center;
+        margin-top: 102px;
+        margin-bottom: 87px;
+        padding-top: 35px;
+    } 
+     .news__article{
+        display: flex;
+        align-items: center;
+        margin:0px 0px 0px 0px;
+        padding:0 20px;
+     }
+     .news .item {
+        background-color: white;
+        width: 370px;
+    }
+    .news .item h4 {
+        padding-right: 200px;
+        padding-left: 20px;
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .news .item p {
+        font-size: 14px;
+        padding-right: 200px;
+    }
+    .news .item .news__author-img {
+        width: 40px;
+        height: 40px;
+        margin: 0 10px 0 20px;
+    }
+    .news .item .news__author h5 {
+        font-size: 14px;
+    }
+
+    /*gallery*/
+    .gallery__grid {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding-bottom: 60px;
+    }
+    .gallery{
+        margin: 0 20px;
+        padding-bottom: 60px;
+    }
+    
+         /*contact*/
+         .contact__form {
+            background-color: white;
+            padding: 0px 0px 49px 20px;
+            top: 65%;
+            left: 2%;
+            right: 2%;
+        }
+        .contact__form-list{
+           margin-right: 54px;
+           font-weight: 400;
+           font-size: 16px;
+           line-height:56px;  
+       }
+       .title .title_text {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+    .contact__form-info {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .footer__wrapper {
+        padding: 600px 0 91px 27px;
+    }
+    .footer__list {
+        display: flex;
+        padding-right: 10px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .icon img{
+      padding-left: 53%;
+      padding-bottom: 30pxc;
+    }
+
+
+
+
+}
 
 @media(min-width: 768px)and (max-width: 1024px){
     .container{
      max-width:1024px;
      width: 100%;
      margin: 0 auto;
-    }
-     .main-nav {
+     }
+
+    .main-nav {
          background-size: cover;
          display: flex;
          align-content: flex-end;
